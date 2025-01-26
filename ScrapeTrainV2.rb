@@ -51,7 +51,7 @@ track_ids.each_with_index do |track_id, index|
 end
 
 puts "[INFO] Creating directory '#{artist_name}' if it does not already exist."
-Dir.mkdir("#{artist_name}") unless File.exists?("#{artist_name}")
+Dir.mkdir("#{artist_name}") unless File.exist?("#{artist_name}")
 
 # Iterate through track_hash_array, for each track we download the mp3 and
 # save under artist_name/track_title.mp3.
